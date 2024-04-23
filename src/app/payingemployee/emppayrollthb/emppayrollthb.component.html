@@ -40,7 +40,7 @@
           <input type="text" placeholder="" aria-label="Number" matInput [formControl]="myControl"
             [matAutocomplete]="auto">
           <mat-autocomplete #auto="matAutocomplete">
-            <mat-option *ngFor="let option of gradedata " [value]="option.name" (focusout)="LevelClick(option)">
+            <mat-option *ngFor="let option of gradedata " [value]="option.name" (mouseleave)="LevelClick(option)">
               {{ option.name }}
             </mat-option>
           </mat-autocomplete>
@@ -76,7 +76,7 @@
         <input type="text" placeholder="" aria-label="Number" matInput [formControl]="myControl"
           [matAutocomplete]="auto">
         <mat-autocomplete #auto="matAutocomplete">
-          <mat-option *ngFor="let option of gradedata " [value]="option.name" (focusout)="LevelClick(option)">
+          <mat-option *ngFor="let option of gradedata " [value]="option.name" (mouseleave)="LevelClick(option)">
             {{ option.name }}
           </mat-option>
         </mat-autocomplete>
@@ -90,7 +90,7 @@
         <!-- <input type="text" placeholder="" aria-label="Number" matInput [formControl]="myControl"
             [matAutocomplete]="auto">
           <mat-autocomplete #auto="matAutocomplete">
-            <mat-option *ngFor="let option of gradedata " [value]="option.name" (focusout)="LevelClick(option)">
+            <mat-option *ngFor="let option of gradedata " [value]="option.name" (mouseleave)="LevelClick(option)">
               {{ option.name }}
             </mat-option>
           </mat-autocomplete> -->
@@ -346,7 +346,7 @@
 
                     <mat-form-field appearance="outline">
                       <input type="number" matInput formControlName="amount" class="alignValue"
-                        (focusout)="calculateAmountYearly(i)">
+                        (mouseleave)="calculateAmountYearly(i)">
                     </mat-form-field>
 
                   </div>
@@ -394,7 +394,7 @@
 
                       <mat-form-field appearance="outline">
                         <input type="number" matInput formControlName="amount" class="alignValue"
-                          (focusout)="calculateAmountYearlys(i)">
+                          (mouseleave)="calculateAmountYearlys(i)">
                       </mat-form-field>
 
                     </div>
@@ -492,7 +492,7 @@
                   <div class="col-3">
                     <mat-form-field appearance="outline">
                       <input type="number" matInput formControlName="amount" class="alignValue"
-                        (focusout)="calculateAmountYearVal()">
+                        (mouseleave)="calculateAmountYearVal()">
                     </mat-form-field>
                   </div>
                   <div class="col-3">
